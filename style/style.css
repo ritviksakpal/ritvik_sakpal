@@ -6,14 +6,13 @@
 }
 
 .container {
-    height: 100vh;
+    min-height: 100vh;
     padding: 0 100px;
 }
 
 #banner {
     min-height: 84vh;
 }
-
 
 #banner h1 {
     padding: 90px 0 0 0;
@@ -99,7 +98,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 #work-banner {
-    height: 84vh;
+    min-height: 84vh;
     display: flex;
     justify-content: space-between;
 }
@@ -181,7 +180,7 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 84vh;
+    min-height: 84vh;
 }
 
 #timeline {
@@ -223,7 +222,7 @@ body::-webkit-scrollbar-thumb {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 84vh;
+    min-height: 84vh;
 }
 
 form {
