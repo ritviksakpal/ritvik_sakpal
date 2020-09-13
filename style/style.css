@@ -4,7 +4,9 @@
     font-family: 'Cantarell', sans-serif;
     background-color: #fff8d3;
 }
-
+.name-header{
+    font-weight: bolder;
+}
 .container {
     min-height: 100vh;
     padding: 0 100px;
