@@ -71,7 +71,7 @@ body::-webkit-scrollbar {
     width: 5px;
 }
 
-body::-webkit-scrollbar-track {
+body::-webkit-bar-track {
     background-color: #fff;
     border-radius: 5px;
 }
@@ -79,6 +79,20 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
     background-color: #000;
     border-radius: 5px;
+}
+
+textarea::-webkit-scrollbar {
+    width: 2px;
+}
+
+textarea::-webkit-bar-track {
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background-color: #000;
+    border-radius: 2px;
 }
 
 .fab,
@@ -233,7 +247,12 @@ form {
 }
 
 input {
-    padding: 10px 125px 10px 8px;
+    padding: 12px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    width: 250px;
     margin: 15px 0px;
     outline: none;
     border: none;
@@ -243,14 +262,32 @@ input {
 input::placeholder {
     font-family: 'Cantarell', sans-serif;
     color: rgb(80, 80, 80);
+    transition: all ease-in-out 0.3s;
+}
+
+input:focus::placeholder {
+    color: transparent;
 }
 
 #message {
-    padding: 10px 125px 125px 8px;
+    width: 250px;
+    padding: 12px;
+    border: #000 solid 2px;
+    outline: none;
     margin: 15px 0px;
     outline: none;
-    border: none;
-    border: #000 solid 2px;
+    resize: vertical;
+    min-height: 100px;
+}
+
+#message::placeholder {
+    font-family: 'Cantarell', sans-serif;
+    color: rgb(80, 80, 80);
+    transition: all ease-in-out 0.3s;
+}
+
+#message:focus::placeholder {
+    color: transparent;
 }
 
 form button {
