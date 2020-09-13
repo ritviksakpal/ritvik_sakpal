@@ -11,8 +11,9 @@
 }
 
 #banner {
-    height: 82vh;
+    min-height: 84vh;
 }
+
 
 #banner h1 {
     padding: 90px 0 0 0;
